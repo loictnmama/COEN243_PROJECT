@@ -4,6 +4,7 @@ Create a fully functioning system that handles the records of patients and docto
 hospital. Based on the following narrative, develop an object-oriented design to represent
 the different entities in the system.
 Part 1: Patients
+
 The initial data of patients is maintained in a file called patients.txt (the first line shows
 the number of patients). Each record in this file contains:
 • Patient First Name (String): The first name of the patient
@@ -20,6 +21,7 @@ is “20240101”
 • Discharge Date (String): has the format YYYYMMDD example: 1st of January 2024 is
 “20240101”
 1
+
 Class: Patient
 Attributes:
 • All the above fields are private attributes.
@@ -31,6 +33,8 @@ Member Functions:
 – If diagnosis contains the word “moderate”, return Moderate.
 – Otherwise, return Stable.
 • Print Patient Info(): Displays all the patient’s information of the data members.
+
+
 Part 2: Doctors
 The initial information of doctors is maintained in a file called doctors.txt (the first line
 shows the number of doctors). Each record in this file contains:
@@ -56,6 +60,7 @@ Attributes:
 • A pointer to a vector of Patient objects.
 • A pointer to a vector of Doctor objects.
 Constructor:
+
 • Reads patients.txt and doctors.txt files to create the dynamic arrays.
 Member Functions:
 • Find Oldest Patient(): Finds and prints the details of the oldest patient.
@@ -79,6 +84,8 @@ FirstName LastName PatientID AssignedDoctorID DateOfBirth BloodType Diagnosis Da
 updates the number of doctors accordingly. Information shown in each row:
 FirstName LastName DoctorID Specialty YearsExperience BaseSalary BonusPercent.
 3
+
+
 Part 3: Driver
 Testing:
 1. Create an object of the Hospital class to read the input files and populate the patient
@@ -90,6 +97,7 @@ or using the objects created in Part 1.
 and Doctor as well as the patients.txt and doctors.txt files).
 5. (Optional)You can test all the member functions defined in Hospital Class.
 Requirements
+
 • Include at least 5 records for patients and doctors in the input files.
 • Make use of exception handling wherever applicable (e.g., invalid data entries in files).
 • Implement file I/O for loading and saving data.
